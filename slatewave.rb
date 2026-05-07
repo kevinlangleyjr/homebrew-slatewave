@@ -5,21 +5,21 @@
 class Slatewave < Formula
   desc "One palette across every tool you live in — install the Slatewave family from one CLI."
   homepage "https://getslatewave.com"
-  version "0.0.12"
+  version "0.0.13"
   license "WTFPL"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.12/slatewave-cli_0.0.12_darwin_amd64.tar.gz"
-      sha256 "3b8148fae4aa7762f8019206eae8fcdd07abdfff7e9b1b577491efa78192ecbf"
+      url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.13/slatewave-cli_0.0.13_darwin_amd64.tar.gz"
+      sha256 "1cf281c63c6f17189ec02b957936d3496df30c630887260effc842f2a3424ab1"
 
       define_method(:install) do
         bin.install "slatewave"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.12/slatewave-cli_0.0.12_darwin_arm64.tar.gz"
-      sha256 "770a025828a25ea259d412b591aee2c4933906660f35f717681a3895ba26c261"
+      url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.13/slatewave-cli_0.0.13_darwin_arm64.tar.gz"
+      sha256 "0a48db609591267b402ce242e7f9264f4e71ab0dc9f7cb4e27be03e8e6957a0e"
 
       define_method(:install) do
         bin.install "slatewave"
@@ -29,15 +29,15 @@ class Slatewave < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.12/slatewave-cli_0.0.12_linux_amd64.tar.gz"
-      sha256 "2f29cad511d2a830a73a961919a0df4179bc613c70d067e0fd28a0e4391092c8"
+      url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.13/slatewave-cli_0.0.13_linux_amd64.tar.gz"
+      sha256 "29cf03b079f1553fa71384d6f83925eba1342f4e022a521872c66daec2b44aaa"
       define_method(:install) do
         bin.install "slatewave"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.12/slatewave-cli_0.0.12_linux_arm64.tar.gz"
-      sha256 "530f607d214ab802fd6511edc052a56b43724413f9d09d6bd72dc71b36411aac"
+      url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.13/slatewave-cli_0.0.13_linux_arm64.tar.gz"
+      sha256 "b1a683840da1ec01e943349aa8dee44b4e4e2c3fb448a62450d0fa736f8c6783"
       define_method(:install) do
         bin.install "slatewave"
       end
