@@ -11,7 +11,7 @@ class Slatewave < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.19/slatewave-cli_0.0.19_darwin_amd64.tar.gz"
-      sha256 "363c4d4156f1ecda64e65b422761053d24a9108e4f645f39d6f2eac51f08281d"
+      sha256 "2e97c4e0974f1f40c90ee93929c9e9ed0d7a33b72afec65e1a418f83e91ddeeb"
 
       define_method(:install) do
         bin.install "slatewave"
@@ -19,7 +19,7 @@ class Slatewave < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.19/slatewave-cli_0.0.19_darwin_arm64.tar.gz"
-      sha256 "696bb6576b9bba89e1780348eb46766a6e8c3d4048a54788b8e7f8b483f402ad"
+      sha256 "b3b0b1f0ffcd9845934d6d995e3cf2feca62cf057e2a2e834010591df205ffdb"
 
       define_method(:install) do
         bin.install "slatewave"
@@ -30,14 +30,14 @@ class Slatewave < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.19/slatewave-cli_0.0.19_linux_amd64.tar.gz"
-      sha256 "f24fc90f56b45b0139eda843cc277bf1ed9df6df5d062b640e13622ad7ec75dc"
+      sha256 "d9abeb57c11ee02fc57e029f0b20d6a51ec51ad88d47929c5d718ac0517321c5"
       define_method(:install) do
         bin.install "slatewave"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kevinlangleyjr/slatewave-cli/releases/download/v0.0.19/slatewave-cli_0.0.19_linux_arm64.tar.gz"
-      sha256 "c69a1a164a0ac0237cad59ae86f3d67e64a7d3b935fe151f2ddc8c2dfd7439ce"
+      sha256 "06c842f4dff124a2931c0cee00f573f3359d82abb8ba599244d20d034ec56773"
       define_method(:install) do
         bin.install "slatewave"
       end
